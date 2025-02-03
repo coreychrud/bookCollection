@@ -9,6 +9,7 @@ default: &default
 development:
   <<: *default
   database: <%= ENV.fetch("PG_DEVELOPMENT_DB") { 'development_db' } %>
+  host: localhost
   username: <%= ENV.fetch("DATABASE_USER") { 'your_username' } %>
   password: <%= ENV.fetch("DATABASE_PASSWORD") { 'your_password' } %>
 
