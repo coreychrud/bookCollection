@@ -10,3 +10,23 @@
   </p>
 
 </div>
+<div id="<%= dom_id user_book %>">
+  <div>
+    <strong>Username:</strong>
+    <%= User.find(user_book.user_id).username %>
+  </div>
+  <div>
+    <strong>Book Title:</strong>
+    <%= Book.find(user_book.book_id).title %>
+  </div>
+  <div>
+    <%= link_to 'Show', user_book %>
+  </div>
+  <div>
+    <%= link_to 'Edit', edit_user_book_path(user_book) %>
+  </div>
+  <div>
+    <%= link_to 'Destroy', user_book, method: :delete, data: { confirm: 'Are you sure?' } %>
+  </div>
+
+</div>
