@@ -79,3 +79,5 @@ gem 'concurrent-ruby', '1.3.4'
 
 gem 'brakeman'
 gem 'rubocop'
+
+gem 'seed_dump'
